@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Arquitecto</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; color: #333; line-height: 1.6; }
+        header {
+            background: url('https://via.placeholder.com/1600x600') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 150px 20px;
+        }
+        header h1 { font-size: 3rem; margin-bottom: 10px; }
+        header p { font-size: 1.3rem; }
+        nav {
+            background: #222;
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        section { padding: 50px 20px; max-width: 1100px; margin: auto; }
+        h2 { margin-bottom: 20px; color: #444; text-align: center; }
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        .galeria img {
+            width: 100%;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .galeria img:hover { transform: scale(1.05); }
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        @media (max-width: 768px) {
+            header { padding: 100px 20px; }
+            header h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Portada -->
+    <header id="inicio">
+        <h1>Juan Pérez - Arquitecto</h1>
+        <p>Diseño funcional y estético para tus proyectos</p>
+    </header>
+
+    <!-- Menú -->
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#bienvenido">Bienvenido</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#sobre">Sobre mí</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <!-- Bienvenido -->
+    <section id="bienvenido">
+        <h2>Bienvenido</h2>
+        <p>Especialista en arquitectura moderna y sostenible. Transformo tus ideas en espacios únicos, combinando funcionalidad, estética y eficiencia. Trabajo en proyectos residenciales, comerciales y urbanos, siempre enfocado en superar las expectativas de mis clientes.</p>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos">
+        <h2>Mis Proyectos</h2>
+        <div class="galeria">
+            <img src="https://via.placeholder.com/400x300" alt="Proyecto 1">
+            <img src="https://via.placeholder.com/400x300" alt="Proyecto 2">
+            <img src="https://via.placeholder.com/400x300" alt="Proyecto 3">
+            <img src="https://via.placeholder.com/400x300" alt="Proyecto 4">
+        </div>
+    </section>
+
+    <!-- Sobre mí -->
+    <section id="sobre">
+        <h2>Sobre mí</h2>
+        <p>Soy arquitecto con más de 10 años de experiencia en el diseño y construcción de espacios residenciales, comerciales y urbanos. Mi pasión es transformar ideas en obras arquitectónicas que inspiren y perduren en el tiempo, siempre con un enfoque sostenible y funcional.</p>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Email: <a href="mailto:juanperez@gmail.com">juanperez@gmail.com</a></p>
+        <p>Teléfono: +57 300 000 0000</p>
+        <p>Ubicación: Valledupar, Colombia</p>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2025 Juan Pérez - Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
