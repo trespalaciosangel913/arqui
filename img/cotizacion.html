@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cotización | JP Arquitectura</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="cotiza.js"></script>
+</head>
+<body class="bg-cotizacion">
+<div class="page-overlay">
+  <header class="site-header">
+    <div class="brand">JP <span>Arquitectura</span></div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="cotizacion.html">Cotización</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section class="hero">
+      <h1>Cotiza tu proyecto en COP</h1>
+      <p>Calcula un valor estimado según tipo de terreno, metros y extras.</p>
+    </section>
+
+    <section class="section">
+      <h2>Datos del proyecto</h2>
+      <form id="form-cotiza" class="form">
+        <div class="inline">
+          <div>
+            <label>Tipo de terreno</label>
+            <select name="terreno" id="terreno" required>
+              <option value="urbano">Urbano</option>
+              <option value="rural">Rural</option>
+              <option value="comercial">Comercial</option>
+            </select>
+          </div>
+          <div>
+            <label>Metros cuadrados</label>
+            <input type="number" id="metros" min="10" step="1" value="120" required>
+          </div>
+          <div>
+            <label>Complejidad</label>
+            <select id="complejidad" required>
+              <option value="baja">Baja</option>
+              <option value="media" selected>Media</option>
+              <option value="alta">Alta</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="inline">
+          <div>
+            <label><input type="checkbox" id="jardin"> Jardín (+$5.000.000)</label>
+          </div>
+          <div>
+            <label><input type="checkbox" id="piscina"> Piscina (+$25.000.000)</label>
+          </div>
+          <div>
+            <label><input type="checkbox" id="premium"> Acabados premium (+$15.000.000)</label>
+          </div>
+        </div>
+
+        <button type="button" id="btn-calcular">Calcular</button>
+      </form>
+    </section>
+
+    <section class="section" id="resultado" style="display:none;">
+      <h2>Resultado</h2>
+      <div id="resumen" class="small"></div>
+      <div style="font-size:28px; font-weight:800; margin-top:12px;" id="precio"></div>
+      <a class="btn" href="contacto.html" style="margin-top:14px; display:inline-block">Solicitar contacto</a>
+    </section>
+  </div>
+
+  <footer>© 2025 Juan Pérez — Todos los derechos reservados</footer>
+</div>
+</body>
+</html>
