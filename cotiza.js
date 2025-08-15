@@ -16,9 +16,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const resumenEl = document.getElementById('resumen');
 
   function basePorM2(t){
-    if(t === 'urbano') return 200000;
-    if(t === 'rural') return 100000;
-    if(t === 'comercial') return 300000;
+    if(t === 'urbano') return 800000;
+    if(t === 'rural') return 600000;
+    if(t === 'comercial') return 1000000;
     return 800000;
   }
   function factorComplejidad(c){

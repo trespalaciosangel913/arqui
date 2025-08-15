@@ -116,3 +116,6 @@ footer{
   background:rgba(0,0,0,.55);
   border-top:1px solid rgba(255,255,255,.08);
 }
+
+.logo { color: white; text-decoration: none; }
+.logo:hover { text-decoration: underline; }
