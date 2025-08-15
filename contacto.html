@@ -1,41 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Contacto - Portafolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header style="background:url('img/contacto.jpg') no-repeat center center/cover;">
-    <h1>Contacto</h1>
-</header>
-
-<nav>
+<header>
+  <h1>Contacto</h1>
+  <nav>
     <a href="index.html">Inicio</a>
     <a href="proyectos.html">Proyectos</a>
     <a href="contacto.html">Contacto</a>
-</nav>
-
+  </nav>
+</header>
 <section>
-    <p>Email: <a href="mailto:juanperez@gmail.com">juanperez@gmail.com</a></p>
-    <p>Teléfono: +57 300 000 0000</p>
-    <p>Ubicación: Valledupar, Colombia</p>
-
-    <h2>Formulario de contacto</h2>
-    <form name="contacto" method="POST" data-netlify="true">
-        <label>Nombre:</label>
-        <input type="text" name="nombre" required>
-        <label>Email:</label>
-        <input type="email" name="email" required>
-        <label>Mensaje:</label>
-        <textarea name="mensaje" required></textarea>
-        <button type="submit">Enviar</button>
-    </form>
+  <h2>Envíame un mensaje</h2>
+  <form name="contacto" method="POST" data-netlify="true">
+    <input type="hidden" name="form-name" value="contacto">
+    <label>Nombre:
+      <input type="text" name="nombre" required>
+    </label>
+    <label>Email:
+      <input type="email" name="email" required>
+    </label>
+    <label>Mensaje:
+      <textarea name="mensaje" required></textarea>
+    </label>
+    <button type="submit">Enviar</button>
+  </form>
 </section>
-
-<footer>
-    <p>© 2025 Juan Pérez - Todos los derechos reservados</p>
-</footer>
 </body>
 </html>
