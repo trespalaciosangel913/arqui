@@ -117,5 +117,6 @@ footer{
   border-top:1px solid rgba(255,255,255,.08);
 }
 
-.logo { color: white; text-decoration: none; }
-.logo:hover { text-decoration: underline; }
+/* clickable brand link */
+.brand a.logo{ color: var(--ink); text-decoration:none; }
+.brand a.logo:hover{ text-decoration: underline; }
