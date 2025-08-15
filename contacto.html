@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - Portafolio</title>
+    <title>Contacto</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="page-header">
+<header style="background:url('img/contacto.jpg') no-repeat center center/cover;">
     <h1>Contacto</h1>
 </header>
 
@@ -24,9 +24,12 @@
 
     <h2>Formulario de contacto</h2>
     <form name="contacto" method="POST" data-netlify="true">
-        <label>Nombre: <input type="text" name="nombre" required></label><br>
-        <label>Email: <input type="email" name="email" required></label><br>
-        <label>Mensaje: <textarea name="mensaje" required></textarea></label><br>
+        <label>Nombre:</label>
+        <input type="text" name="nombre" required>
+        <label>Email:</label>
+        <input type="email" name="email" required>
+        <label>Mensaje:</label>
+        <textarea name="mensaje" required></textarea>
         <button type="submit">Enviar</button>
     </form>
 </section>
